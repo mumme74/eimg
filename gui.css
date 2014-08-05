@@ -1,0 +1,185 @@
+/**
+* styles for html gui app
+*/
+
+.messageContainer {
+	position: fixed;
+	top: 0;
+	left:0;
+	width: 100%;
+	transition:all 0.3s;
+	
+}
+.messageContainer .base{
+	text-align:center;
+	padding: 1em;
+	border: 1px solid gray;
+	font:bold 15pt sans-serif;
+	vertical-align:middle;
+}
+.messageContainer > .info {
+	background-color: lightblue;
+}
+
+.messageContainer > .warn {
+	background-color: orange;
+}
+
+.messageContainer > .error {
+	background-color: red;
+}
+
+
+
+.closer {
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABWUlEQVQ4T6WTvyuFYRTH3WzS1VUWKYvVYLj/AZOfJQuZrLeElOEivzIIhc1okGRBGfgTJFlZDMpyIzKKz/d2Th1vD3fw1qfnOd/zPN/nPO973lzdP59cYn8zWgn6oN3yj4xnsAcvcU/WoJfkARR+KayCPg4Xno8Gg4gnUF/jVp/kh+Bc69yghfkD5OELrqAnY3RJ3G17Xhk7oOIGSwQLtkHO/VCGFdPmGVfh1HKSF2HZDW4IumyxKpiEXZizE9cZ9WJ3QtXXzItu8E7QmCm5ekKowOe+7I1J018GKt+vFa/oBjo07wZ3BJ2hAj991rQNM5ORP7e6thvojrqvHjXMAEzBlmnTjNsQX+IacdkNWgnuoQH0ndUPI+B5vdhjGAb1yQfoMz7HRhpDUBem2jtUXu0TrT2UmF08irZvlcRNPtfJE3DkQuq0NpIzkPqZNtGfonOtclNV/NC+AW7oQBGfkFEZAAAAAElFTkSuQmCC');
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	padding:0;
+	float: right;
+	margin: 0.5em;
+}
+
+.closer:hover {
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABYklEQVQ4T63TyyuEURjHceOWYiuxsDIl14kFVi5DFvgP7BRRLuX/ICWXhaW/wFjMiGYnFq4jUjbKLXZGikm+Pz2nDvNaTJz69JznvOc873ve97yhvOzWzNAIOlFpl++ISazhxF8S8pJi+gsYRX5AYQ19YBXTeNeAK6DFMfTh1SatE6+sUA1x2IqXEBMYwpsrsEIyhhsM4PiXJ4gwvokqLGNCBZpwaI/UYf024jW0dzW9i2rsoQW7KEREBbTvKSxiEq3YwS26oTnKVaQHB1jCuNbq4hnqoLvu20QtqMW5FVD/wgreE9vtKVIq8Iwy80JUK8c2Gi0/JUbxaLnma11aBdIoDSiwxZjOhNoR9IWeggr83EKF3b2e6G8hRd6LB3zbwp9fYoM9YoaYy2cs0BbdQZonmUEuB2mO+bOuQBHJBvrhH2W9fTUdNv8ox8kHkfm3n8lu9BXc79xFP2wXLolJZP3Onw3BYxX5uyGsAAAAAElFTkSuQmCC');
+
+}
+
+
+.imageLoaderWidget {
+	border: 1px solid gray;
+	display: inline-block;
+	width: 30%;
+	min-height: 9em;
+	padding: 0.4em;
+	border-radius:10px;
+	vertical-align:top;
+}
+.dropTarget {
+	background: lightblue;
+	border: 2px dashed yellow;
+}
+
+.imageLoaderWidget > .showContainer {
+	color: inherit;
+}
+.imageLoaderWidget > .showContainer.notLoaded {
+	color: lightgray;
+}
+.imageLoaderWidget > .showContainer.notLoaded:after {
+	content: '... not yet loaded, drop on page or paste on this text';
+}
+.imageLoaderWidget input {
+	background-color: #EEE;
+	border-radius: 4px;
+	padding: 0.3em;
+}
+
+.imageLoaderWidget .selected {
+	background-color: lightblue;
+	border: 1px dotted gray;
+}
+
+.imageLoaderWidget > .imageItem {
+	vertical-align:top;
+}
+
+.imageLoaderWidget > .imageItem .icon {
+	max-width: 100px;
+	max-height: 100px;
+	vertical-align:middle;
+	margin: 0.5em;
+}
+.imageLoaderWidget > .imageItem span {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0.2em;
+}
+
+
+
+
+.shrinkerWidget {
+	border: 1px solid gray;
+	display: inline-block;
+	padding: 0.4em;
+	border-radius:10px;
+	vertical-align:top;
+}
+
+.shrinkerWidget canvas {
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAXCAYAAADk3wSdAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAACLQAAAi0B5Waf5AAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABxSURBVDiN7dCxDYAgFIThw7AKAziBsIArySpuYkJL2IGGGlojwcb+PUuSd/WfrzjlvbcALIg551ZjzE51AKA/8KDC1trNAQFg4YZ/JqigM6AqhHDVWjcq7L0/OeeThZZSBidMKY0Yo+K083wqqKAzoC+Jwx85ki2e8QAAAABJRU5ErkJggg==');
+	border: 1px solid white;
+	/*width:80%;
+	height: 50px;*/
+}
+.shrinkerWidget canvas.whiteBackground {
+	background-image: none;
+	border: 1px dashed gray;
+}
+
+.shrinkerWidget compressButton {
+	
+	float: right;
+}
+
+.shrinkerWidget .info .color {
+  width: 20px;
+  height: 10px;
+  margin-right: 1px;
+  background: #dddddd;
+  float: left;
+  transition: all 0.5s;
+}
+.shrinkerWidget .info .color:hover {
+  transition: none;
+  transform: scale(1.2, 1.2);
+  box-shadow: 0 1px 10px black;
+}
+.shrinkerWidget .info .fileinfo{
+	background-color:#DDD;
+	padding: 0.2em;
+	border: 1px solid blue;
+}
+.shrinkerWidget .info .fileinfo:empty{
+	background-color: none;
+	padding: 0;
+	border: none;
+}
+.shrinkerWidget a {
+	font-size: 10px;
+	font-style: italic;
+}
+.shrinkerWidget a:hover {
+	background-color:#CCC;
+	transform: scale(1.2, 1.2);
+    box-shadow: 0 1px 10px black;
+} 
+
+
+#blocker {
+	position: fixed;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left:0;
+}
+#blocker > div {
+	margin:auto;
+	width: 90%;
+	height: 90%;
+	background-color: rgba(221, 221, 221, 1.0);
+}
+#blocker > div > textarea {
+	width: 95%;
+	height: 95%;
+	border: 1px solid #666;
+	margin: 0.5em;
+	position:relative;
+	top: 5px;
+	left: 10px;
+}
+

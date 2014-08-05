@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Compress images for microcontrollers</title>
+    <style>
+      	@import "gui.css";
+      	html{
+	  		min-height: 100%;
+	  		padding:0;
+		}
+		body {
+			min-height: 100%;
+			font-family: sans-serif;
+			padding: 0;
+			margin: 0;
+		}
+		body > .banner {
+			padding-left: 2em;
+			padding-top: 0.2em;
+			padding-bottom: 0.2em;
+			background-color: navy;
+			color: #DDD;
+			margin:0;
+			margin-bottom: 0.5em;
+		}
+		body > .content {
+			margin: 0.4em;
+		}
+    </style>
+    <script src="filereader.js"></script>
+    <script src="gui.js"></script>
+    <script src="rgbquant.js"></script>
+    <script src="eimg.js"></script>
+  </head>
+<body>
+	<div class="banner"><h2>Compress images for embeddding in &#181;C memory</h2></div>
+	<div class="content">
+		<span class="imageLoaderWidget"></span>
+		<span class="shrinkWidget" /></span>
+	<div>
+</body>
+</html>

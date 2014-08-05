@@ -1,0 +1,3 @@
+#ignore user settings file for qtcretor
+*.user
+
